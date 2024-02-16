@@ -1,0 +1,86 @@
+.Section1{
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    position: relative;
+   .img {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        z-index: 0;
+        overflow: hidden;
+        img{
+            width: 100vw;
+            height: 80vh; 
+            // animation-delay: 1s;
+            animation: imgBlowUp 10s infinite;
+            
+        }
+       
+
+    }
+    @keyframes imgBlowUp {
+        from{
+            opacity: .7;
+            transform: scale(100%);
+        }
+        to{
+            opacity: 1;
+            transform: scale(110%);
+        }
+    }
+   
+    .container{
+        position: absolute;
+        z-index: 10;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(to top,  rgb(3, 49, 14) , rgba(10, 71, 24, 0.945) 35%,rgba(10, 71, 24, 0.178),rgba(0, 73, 36, 0.356),rgba(0, 255, 149, 0.5));
+         grid-template-rows:8fr 3fr .5fr ;
+        .top{
+           width: 60vw;
+           min-height:10rem ;
+           h1{
+            margin-bottom: 2rem;
+           }
+        }
+        .bottom{
+            min-height: 100% ;
+            width: 70vh;
+            min-width: 70vw;
+            max-width: 95vw;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 1px;
+          
+            
+            div{
+                
+                flex-direction: column;
+                background: linear-gradient(to top,rgba(0, 255, 98, 0),rgb(52, 116, 68));
+                
+                h4{
+                    color: rgb(187, 187, 187);
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                }
+                a{
+                    color: rgb(0, 224, 0);
+                }
+
+            }
+            
+            .div1, .div2,.div3{
+                transition-duration: .2s;
+               
+                &:hover{
+                    transform: translateY(-1.5rem);
+                    box-shadow: 0  100px 100px rgba(26, 26, 26, 0.705);
+                    
+                    }
+               
+            }
+            
+            
+        }
+    }
+}

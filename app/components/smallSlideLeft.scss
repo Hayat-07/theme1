@@ -1,0 +1,41 @@
+
+
+
+.slider{
+                
+               
+                position: relative;
+                justify-content: start;
+                flex-direction: row;
+                overflow: hidden;
+                
+                    
+                   
+                    
+                    .card{
+                      
+                      padding:1rem ;
+                      
+                      color: red;
+                      transition-duration: 4s;
+                      
+                     
+                      //  transform: translateX(50%);
+                       
+                      .imgDiv{
+                        min-width: 300px;
+                        width: 500px;
+                        height: 350px;
+                        
+                        img{
+                         
+                          width: 500px;
+                          height: 350px;
+                        }
+    
+                      }  
+                    }
+                
+            }
+
+

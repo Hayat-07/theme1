@@ -1,0 +1,54 @@
+.header{
+    color: white;
+    height: 100px;
+    width: 80vw;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    
+    background-color: rgba(32, 32, 32, 0);
+     justify-content: space-between;
+    
+     .navBar{
+        height: 100%;
+         width: 80%;
+         justify-content: space-evenly;
+
+         ul{
+            height: 100%;
+            width: 70%;
+           justify-content: space-evenly; 
+           
+           li{
+            height: 100%;
+            padding-left: 5%;
+            padding-right: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+
+            &:hover{
+                cursor: pointer;
+                background-color: rgba(255, 255, 255, 0.39);
+               }
+           }
+         }
+
+         .btn{
+            padding: 13px;
+            border: 1px solid white;
+            background-color: rgba(255, 255, 255, 0.151);
+            &:hover{
+                cursor: pointer;
+                color:white;
+                background-color: rgb(1, 134, 46);
+            }
+         }
+
+     }
+
+
+
+
+}
